@@ -28,7 +28,7 @@ static unsigned long int Q[4096], c = 362436;
 static unsigned int floodport;
 volatile int limiter;
 volatile unsigned int pps;
-volatile unsigned int sleeptime = 20;
+volatile unsigned int sleeptime = 0;
  
 void init_rand(unsigned long int x)
 {
