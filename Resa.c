@@ -28,7 +28,7 @@ static unsigned long int Q[4096], c = 362436;
 static unsigned int floodport;
 volatile int limiter;
 volatile unsigned int pps;
-volatile unsigned int sleeptime = 100;
+volatile unsigned int sleeptime = 20;
  
 void init_rand(unsigned long int x)
 {
@@ -197,7 +197,7 @@ int main(int argc, char *argv[ ])
         fprintf(stdout, "basliyom amcik\n");
         for(i = 0;i<(atoi(argv[5])*multiplier);i++)
         {
-                usleep((100/multiplier)*100);
+                usleep((1000/multiplier)*1000);
                 if((pps*multiplier) > maxpps)
                 {
                         if(1 > limiter)
