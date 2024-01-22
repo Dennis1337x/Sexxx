@@ -166,7 +166,7 @@ void *flood(void *par1)
                 {
                         i = 0;
                         usleep(sleeptime);
-                        fprintf(stdout, "diwno baba sikis zamani")
+                        fprintf(stdout, "diwno baba sikis zamani");
                 }
                 i++;
         }
